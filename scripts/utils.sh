@@ -29,7 +29,7 @@ install_oh_my_zsh() {
 
 setup_dotfiles() {
   if [ ! -d "$HOME/dotfiles" ]; then
-    git clone https://github.com/YOUR_USERNAME/dotfiles.git "$HOME/dotfiles"
+    git clone https://github.com/aaronlai-dev/dotfiles.git "$HOME/dotfiles"
   fi
 
   cd "$HOME/dotfiles"
