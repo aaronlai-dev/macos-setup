@@ -33,6 +33,9 @@ bash "$DIR/scripts/macos.sh"
 echo "🧭 Configuring Dock..."
 RESET_DOCK=true bash "$DIR/scripts/dock.sh"
 
+echo "🔐 Setting up GitHub SSH..."
+bash "$DIR/scripts/github-ssh.sh"
+
 # Services
 echo "🚀 Starting services..."
 bash "$DIR/scripts/services.sh"
