@@ -33,8 +33,6 @@ bash "$DIR/scripts/macos.sh"
 echo "🧭 Configuring Dock..."
 RESET_DOCK=true bash "$DIR/scripts/dock.sh"
 
-# Reload shell
-echo "🔄 Reloading shell..."
-exec zsh
-
 echo "🎉 Setup Complete!"
+
+exec zsh
