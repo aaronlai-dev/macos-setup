@@ -26,10 +26,11 @@ add_to_dock () {
 }
 
 add_to_dock "/Applications/Arc.app"
-add_to_dock "/Applications/Visual Studio Code.app"
-add_to_dock "/System/Applications/System Settings.app"
-add_to_dock "/Applications/Obsidian.app"
 add_to_dock "/Applications/Ghostty.app"
+add_to_dock "/Applications/Zed.app"
+add_to_dock "/Applications/Slack.app"
+add_to_dock "/Applications/Obsidian.app"
+add_to_dock "/System/Applications/System Settings.app"
 
 killall Dock
 
