@@ -41,7 +41,6 @@ brew "switchaudio-osx"
 # Casks -----------------------------------------------------------------
 cask "git-credential-manager"
 cask "sf-symbols"
-cask "alt-tab"
 cask "font-sf-mono"
 cask "font-sf-pro"
 
@@ -53,3 +52,4 @@ cask "visual-studio-code"
 cask "obsidian"
 cask "zed"
 cask "slack"
+cask "zoom"
