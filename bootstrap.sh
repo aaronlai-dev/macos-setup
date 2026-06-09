@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "🚀 Aaron's Mac Bootstrap"
+echo "🤖 Aaron's Mac Bootstrap"
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -33,6 +33,10 @@ bash "$DIR/scripts/macos.sh"
 echo "🧭 Configuring Dock..."
 RESET_DOCK=true bash "$DIR/scripts/dock.sh"
 
-echo "🎉 Setup Complete!"
+# Services
+echo "🚀 Starting services..."
+bash "$DIR/scripts/services.sh"
+
+echo "🎉🎉🎉 Setup Complete! 🎉🎉🎉"
 
 exec zsh
