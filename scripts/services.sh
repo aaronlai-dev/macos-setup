@@ -6,11 +6,8 @@ echo "🚀 Starting login services..."
 # Sketchybar
 brew services start sketchybar || true
 
-# yabai
-yabai --start-service || yabai --restart-service || true
-
-# skhd
-skhd --start-service || skhd --restart-service || true
+# OmniVM
+open -a "OmniVM" || true
 
 # raycast
 open -a "Raycast" || true
