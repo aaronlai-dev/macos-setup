@@ -26,6 +26,8 @@ brew "felixkratz/formulae/sketchybar"
 brew "nowplaying-cli"
 # Window manager for macOS
 brew "omniwm"
+# Todo TUI
+brew "webstonehq/tap/tuxedo"
 
 brew "node"
 brew "python"
