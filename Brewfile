@@ -1,5 +1,6 @@
 tap "felixkratz/formulae"
-tap "koekeishiya/formulae"
+# tap "koekeishiya/formulae"
+tap "BarutSRB/tap"
 
 # CLI ------------------------------------------------------------------
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -13,15 +14,18 @@ brew "fzf"
 
 # Cosmetics ------------------------------------------------------------
 # A window border system for macOS
-brew "felixkratz/formulae/borders"
+# OFF: brew "felixkratz/formulae/borders"
+# OFF: Simple hotkey-daemon for macOS.
+# brew "koekeishiya/formulae/skhd"
+# OFF: A tiling window manager for macOS based on binary space partitioning.
+# brew "koekeishiya/formulae/yabai"
+
 # Custom macOS statusbar with shell plugin, interaction and graph support
 brew "felixkratz/formulae/sketchybar"
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 # Retrieves currently playing media, and simulates media actions
 brew "nowplaying-cli"
+# Window manager for macOS
+brew "omniwm"
 
 brew "node"
 brew "python"
