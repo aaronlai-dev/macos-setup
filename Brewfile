@@ -12,6 +12,12 @@ brew "eza"
 brew "fd"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Zsh plugin manager
+brew "zinit"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Prompt customisation
+brew "starship"
 
 # Cosmetics ------------------------------------------------------------
 # A window border system for macOS
