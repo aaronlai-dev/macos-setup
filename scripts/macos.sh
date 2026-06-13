@@ -22,6 +22,16 @@ defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 65 "
 </dict>
 "
 
+# Remap Caps Lock → Escape
+hidutil property --set '{
+  "UserKeyMapping": [
+    {
+      "HIDKeyboardModifierMappingSrc": 0x700000039,
+      "HIDKeyboardModifierMappingDst": 0x700000029
+    }
+  ]
+}' >/dev/null 2>&1 || echo "⚠️ Failed to remap Caps Lock"
+
 # Set Globe/Fn key to "Do Nothing"
 defaults write com.apple.HIToolbox AppleFnUsageType -int 0
 
