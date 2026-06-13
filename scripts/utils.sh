@@ -35,3 +35,13 @@ setup_dotfiles() {
   cd "$HOME/dotfiles"
   stow .
 }
+
+keep_sudo_alive() {
+    sudo -v
+
+    while true; do
+        sudo -n true
+        sleep 60
+        kill -0 "$$" || exit
+    done 2>/dev/null &
+}

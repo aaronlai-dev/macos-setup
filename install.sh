@@ -35,10 +35,6 @@ fi
 
 cd "$REPO_DIR"
 
-# Ask for sudo upfront
-echo "🔐 Requesting sudo access..."
-sudo -v
-
 echo "▶️ Running bootstrap..."
 chmod +x ./bootstrap.sh
 ./bootstrap.sh

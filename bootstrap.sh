@@ -10,6 +10,7 @@ source "$DIR/scripts/utils.sh"
 
 # Preflight Checks
 echo "🔎 Running preflight checks..."
+keep_sudo_alive
 ensure_xcode
 ensure_homebrew
 
