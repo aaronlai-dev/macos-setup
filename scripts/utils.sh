@@ -34,6 +34,12 @@ setup_dotfiles() {
 
   cd "$HOME/dotfiles"
   stow .
+
+  # Make SketchyBar scripts executable
+  if [ -d "$HOME/.config/sketchybar" ]; then
+      find "$HOME/.config/sketchybar" -name "*.sh" -exec chmod +x {} \;
+      chmod +x "$HOME/.config/sketchybar/sketchybarrc" 2>/dev/null || true
+  fi
 }
 
 keep_sudo_alive() {
