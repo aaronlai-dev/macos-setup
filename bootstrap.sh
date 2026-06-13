@@ -18,13 +18,13 @@ ensure_homebrew
 echo "📦 Installing applications..."
 bash "$DIR/scripts/apps.sh"
 
-# Install Oh My Zsh (idempotent)
-echo "🐚 Installing Oh My Zsh..."
-install_oh_my_zsh
-
 # Clone dotfiles
 echo "🔗 Setting up dotfiles..."
 setup_dotfiles
+
+# Install Oh My Zsh
+echo "🐚 Installing Oh My Zsh..."
+install_oh_my_zsh
 
 # Apply macOS preferences
 echo "⚙️ Applying macOS preferences..."
