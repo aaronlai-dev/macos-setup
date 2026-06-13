@@ -1,6 +1,7 @@
 tap "felixkratz/formulae"
 # tap "koekeishiya/formulae"
 tap "BarutSRB/tap"
+tap "webstonehq/tap"
 
 # CLI ------------------------------------------------------------------
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -25,7 +26,7 @@ brew "felixkratz/formulae/sketchybar"
 # Retrieves currently playing media, and simulates media actions
 brew "nowplaying-cli"
 # Window manager for macOS
-brew "omniwm"
+brew "BarutSRB/tap/omniwm"
 # Todo TUI
 brew "webstonehq/tap/tuxedo"
 
