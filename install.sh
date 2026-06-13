@@ -23,10 +23,11 @@ if ! command -v git >/dev/null 2>&1; then
   exit 1
 fi
 
-# Clone or update repo
+# Clone or force-update repo
 if [ -d "$REPO_DIR/.git" ]; then
   echo "🔄 Updating existing macos-setup repo..."
-  git -C "$REPO_DIR" pull
+  git -C "$REPO_DIR" fetch origin main
+  git -C "$REPO_DIR" reset --hard origin/main
 else
   echo "📥 Cloning macos-setup repo..."
   git clone "$REPO_URL" "$REPO_DIR"

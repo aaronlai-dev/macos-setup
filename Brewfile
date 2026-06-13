@@ -52,7 +52,7 @@ cask "font-sf-pro"
 
 cask "raycast"
 cask "alt-tab"
-cask "ghossty"
+cask "ghostty"
 cask "arc"
 cask "visual-studio-code"
 cask "obsidian"
