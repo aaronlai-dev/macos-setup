@@ -57,6 +57,11 @@ else
     echo "ℹ️ Wallpaper not found at $WALLPAPER"
 fi
 
+# Widgets
+defaults write com.apple.WindowManager StandardHideWidgets -bool true
+defaults write com.apple.WindowManager EnableWidgets -bool false
+defaults write com.apple.WindowManager StageManagerHideWidgets -bool true
+
 # Dock
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock tilesize -int 24

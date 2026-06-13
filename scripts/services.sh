@@ -7,7 +7,7 @@ echo "🚀 Starting login services..."
 brew services start sketchybar || true
 
 # OmniVM
-open -a "OmniVM" || true
+open -a "OmniWM" || true
 
 # raycast
 open -a "Raycast" || true
